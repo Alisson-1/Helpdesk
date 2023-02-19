@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import {Header} from "../../Components/Header";
 import {
 LoginBoxContainer, 
@@ -15,6 +16,7 @@ LoginBoxContainer,
 import HiddenIcon from './svg/hidden.svg'
 
 export const LoginPage = ()=>{
+  const navigate = useNavigate();
   return (
         <ScreenContainer>
     <Header></Header>
@@ -32,7 +34,7 @@ export const LoginPage = ()=>{
         </DivLogin>
         <LoginForgotText className="GoLeft">Esqueci a senha</LoginForgotText>
         
-        <ButtoLogin>Entrar</ButtoLogin>
+        <ButtoLogin onClick={()=>navigate("/mainpage")}>Entrar</ButtoLogin>
 
         </ContainerLogin>
         
