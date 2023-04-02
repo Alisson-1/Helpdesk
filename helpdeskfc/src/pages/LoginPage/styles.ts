@@ -104,7 +104,7 @@ margin-top:2.9rem;
 cursor: pointer;
 `
 
-export const ContainerLogin = styled.div`
+export const ContainerLogin = styled.form`
 display: flex;
 
 flex-direction:column;
